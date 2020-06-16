@@ -1,0 +1,26 @@
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+  background: url(css/fon.jpg);
+}
+
+#cent {
+  background-color: #fff;
+  border-top: 2px dashed #e4e3e3;
+  width: 100%;
+  float: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+a {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   a:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: red; /* Ссылка красного цвета */
+   }
+
+   p{
+   	float: right;
+   }
+

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Child development</title>
+  <link rel="stylesheet" href="css/main.css">
+   
+</head>
+<body>
+  <div onclick="show('none')" id="wrap"></div>
+<!-- Всплывающее окно-->
+<div id="window">
+<!-- Крестик-->
+<span class="close" onclick="show('none')">X</span>
+<br>
+<a href="matematika.html" target="new">1. Сандарды үйрену. Сіздің балаңыз нөмірлермен бірге осы түрлі-түсті, көңілді карточкалармен айналысады. Сіз бұл карталарды әртүрлі жарыстарда пайдалана аласыз. Ойындарда сіз балаңызға қалай есептеуді үйрете бастағанда қолданасыз. Карточкалар 1-ден 10-ға дейін.</a>
+<br>
+<br>
+<a href="sanapuireny.html" target="new">2. Сандарды және санауды үйрену. Пазлдар "сандар мен есепті зерттейміз".Барлығы: үш картадан тұратын 10 пазл. Бірінші суретте сан, екінші суретте элементтер саны көрсетілген. Сандар мен ұпайларды білу: 1-10. Карточкаларды басып шығарыңыз және ортасында сызық бойымен ақырын кесіңіз. Бала үш жартысын жинауы керек. Санды, осы сандағы объектілердің санын, ал үшінші суретте жазбаша түрінде жазылған санды табу керек.</a>
+<br>
+<br>
+<a href="geometria.html" target="new">3. Геометриялық фигуралар. Жақында сіздің балаңыз мектепке барады, оқиды, эссе жазады, тест тапсырады, үй жұмысын жасайды. Бұл арада сіздің балаңыз маңызды оқиғаға дайындалуы керек. Бүгін біз формаларды зерттейміз.
+Алғашқы сабақтарыңызды көңілді ойындарға айналдырыңыз. Ол үшін бізге әр түрлі геометриялық фигуралары бар әдемі карталар қажет.
+Мысалы: үшбұрыш, шеңбер, шаршы, сопақ, тіктөртбұрыш, ромб. Барлығы: 6 карточка</a>
+<br>
+<br>
+<a href="pazl.html" target="new">4. Пазлдар мен формалар.  Баланың дамуы үшін тамаша карточкалар. Форманы Үйренеміз. Балаларға арналған пазлдар. Қара ромбадағы фигураны мұқият кесу керек. Және фигуралардың айналасында карталарды мұқият кесіңіз.</a>
+<br>
+<br>
+<a href="kartalar.html" target="new">5. Математикалық карталар. Математика сабақтарына арналған керемет карталар. Тегін математикалық карталарды жүктеп алыңыз. Ұсынылған төртеудің ішінен бір қосымша сурет табу керек. Балаға әр суретте қанша зат бейнеленгенін санап, қосымша картаны тауып, осы картада қай фигура басым болатынын біліп алу керек. Көңілді түсті математикалық карталар. Нысандарды санаңыз және мұнда қандай фигура (сурет) артық екенін табыңыз.</a>
+</div>
+
+<script ENGINE="text/javascript">
+//Функция показа
+function show(state)
+{
+document.getElementById('window').style.display = state;
+document.getElementById('wrap').style.display = state;
+}
+</script>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Child development</span>
+    </div>
+    <div id="about">
+      <a  href="#" onclick="slowScroll('#main')" id="menq">Бастапқы бет</a>
+      <a href="#" onclick="slowScroll('#overview')" id="menq">Математика-логика</a>
+      <a href="#zatemnenie" id="grut">Ойындар</a>
+      <a href="#" onclick="slowScroll('#contacts')" id="menq">Әліппе</a>
+      <a href="#" onclick="slowScroll('#faq')" id="menq">Бояу</a>
+    </div>
+  </header>
+ 
+  <div id="zatemnenie">
+      <div id="okno">
+        
+        <style>
+          
+      #zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      #okno {
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        padding: 15px;
+        position: absolute;
+        top: 90px;
+        bottom: 0;
+        left: 400px;
+        margin: ;
+      }
+      #zatemnenie:target {display: block;}
+      .close {
+        display: inline-block;
+        border: 1px solid #0000cc;
+        color: #0000cc;
+        padding: 0 12px;
+        top: 220px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 14pt;
+        cursor:pointer;
+      }
+      .close:hover {background: #e6e6ff;}
+    </style>
+
+       <style type="text/css">
+    text{
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:11px;
+        pointer-events:none;
+    }
+    #chart{
+        position:absolute;
+        width:500px;
+        height:500px;
+        top:0;
+        left:0;
+    }
+    #question{
+        position: absolute;
+        width:400px;
+        height:500px;
+        top:0;
+        left:520px;
+    }
+    #question h1{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top:50%;
+        -webkit-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+    }
+    </style>
+    <div id="chart"></div>
+       
+    <script>
+  $( document ).ready(function(){
+    $( ".close" ).click(function(){ // задаем функцию при нажатиии на элемент с классом hide
+      $( "#grut" ).hide(); // скрывыаем все элементы <p>
+    });
+    $( ".close" ).click(function(){ // задаем функцию при нажатиии на элемент с классом show
+      $( "p" ).show(); // отображаем все элементы <p>
+    });
+  });
+    </script>
+    
+    
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <div id="question"><h1></h1><a href="#" class="close"><p>Х</p></a></div>
+    <script type="text/javascript" charset="utf-8">
+        var padding = {top:20, right:40, bottom:0, left:0},
+            w = 500 - padding.left - padding.right,
+            h = 500 - padding.top  - padding.bottom,
+            r = Math.min(w, h)/2,
+            rotation = 0,
+            oldrotation = 0,
+            picked = 100000,
+            oldpick = [],
+            color = d3.scale.category20();//category20c()
+            //randomNumbers = getRandomNumbers();
+        //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
+        var data = [
+                    {"label":"1+1=?",  "value":1,  "question":" 1+1=? "}, // padding
+                    {"label":"2-1=?",  "value":1,  "question":"2-1=?"}, //font-family
+                    {"label":"2+2=?",  "value":1,  "question":"2+2=?"}, //color
+                    {"label":"3-2=?",  "value":1,  "question":"3-2=?"}, //font-weight
+                    {"label":"2+3=?",  "value":1,  "question":"2+3=?"}, //font-size
+                    {"label":"5-2=?",  "value":1,  "question":"5-2=?"}, //background-color
+                    {"label":"2+6=?",  "value":1,  "question":"2+6=?"}, //nesting
+                    {"label":"8-4=?",  "value":1,  "question":"8-4=?"}, //bottom
+                    {"label":"5+2=?",  "value":1,  "question":"5+2=?"}, //sans-serif
+                    {"label":"6-1=?", "value":1, "question":"6-1=?"}, //period
+                    {"label":"6+1=?", "value":1, "question":"6+1=?"}, //pound sign
+                    {"label":"7-6=?", "value":1, "question":"7-6=?"}, //<body>
+                    {"label":"4+3=?", "value":1, "question":"4+3=?"}, //<ul>
+                    {"label":"8-2=?", "value":1, "question":"8-2=?"}, //<h1>
+                    {"label":"3+5=?", "value":1, "question":"3+5=?"}, //margin
+                    {"label":"7-6=?", "value":1, "question":"7-6=?"}, //< >
+                    {"label":"1+6=?", "value":1, "question":"1+6=?"}, // { }
+                    {"label":"9-5=?", "value":1, "question":"9-5=?"}, //<p>
+                    {"label":"5+3=?", "value":1, "question":"5+3=?"}, //<!DOCTYPE html>
+                    {"label":"7-4=?", "value":1, "question":"7-4=?"}, //<head>
+                    {"label":"4+4=?", "value":1, "question":"4+4=?"}, // colon
+                    {"label":"6-2=?", "value":1, "question":"6-2=?"}, // <style>
+                    {"label":"1+5=?", "value":1, "question":"1+5=?"}, // .html
+                    {"label":"8-6=?", "value":1, "question":"8-6=?"}, // HTML
+                    {"label":"3+7=?", "value":1, "question":"3+7=?"}, // CSS
+                    {"label":"9-3=?", "value":1, "question":"9-3=?"}, // JavaScript
+                    {"label":"5+2=?", "value":1, "question":"5+2=?"}, // border
+                    {"label":"3-1=?", "value":1, "question":"3-1=?"},//semi-colon
+                    {"label":"4+3=?", "value":1, "question":"4+3=?"}, //100%
+                    {"label":"6-4=?", "value":1, "question":"6-4=?"} //comma
+        ];
+        var svg = d3.select('#chart')
+            .append("svg")
+            .data([data])
+            .attr("width",  w + padding.left + padding.right)
+            .attr("height", h + padding.top + padding.bottom);
+        var container = svg.append("g")
+            .attr("class", "chartholder")
+            .attr("transform", "translate(" + (w/2 + padding.left) + "," + (h/2 + padding.top) + ")");
+        var vis = container
+            .append("g");
+            
+        var pie = d3.layout.pie().sort(null).value(function(d){return 1;});
+        // declare an arc generator function
+        var arc = d3.svg.arc().outerRadius(r);
+        // select paths, use arc generator to draw
+        var arcs = vis.selectAll("g.slice")
+            .data(pie)
+            .enter()
+            .append("g")
+            .attr("class", "slice");
+            
+        arcs.append("path")
+            .attr("fill", function(d, i){ return color(i); })
+            .attr("d", function (d) { return arc(d); });
+        // add the text
+        arcs.append("text").attr("transform", function(d){
+                d.innerRadius = 0;
+                d.outerRadius = r;
+                d.angle = (d.startAngle + d.endAngle)/2;
+                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -10) +")";
+            })
+            .attr("text-anchor", "end")
+            .text( function(d, i) {
+                return data[i].label;
+            });
+        container.on("click", spin);
+        function spin(d){
+            
+            container.on("click", null);
+            //all slices have been seen, all done
+            console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
+            if(oldpick.length == data.length){
+                console.log("done");
+                container.on("click", null);
+                return;
+            }
+            var  ps       = 360/data.length,
+                 pieslice = Math.round(1440/data.length),
+                 rng      = Math.floor((Math.random() * 1440) + 360);
+                
+            rotation = (Math.round(rng / ps) * ps);
+            
+            picked = Math.round(data.length - (rotation % 360)/ps);
+            picked = picked >= data.length ? (picked % data.length) : picked;
+            if(oldpick.indexOf(picked) !== -1){
+                d3.select(this).call(spin);
+                return;
+            } else {
+                oldpick.push(picked);
+            }
+            rotation += 90 - Math.round(ps/2);
+            vis.transition()
+                .duration(3000)
+                .attrTween("transform", rotTween)
+                .each("end", function(){
+                    //mark question as seen
+                    d3.select(".slice:nth-child(" + (picked + 1) + ") path")
+                        .attr("fill", "#111");
+                    //populate question
+                    d3.select("#question h1")
+                        .text(data[picked].question);
+                    oldrotation = rotation;
+                
+                    container.on("click", spin);
+                });
+        }
+        //make arrow
+        svg.append("g")
+            .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h/2)+padding.top) + ")")
+            .append("path")
+            .attr("d", "M-" + (r*.15) + ",0L0," + (r*.05) + "L0,-" + (r*.05) + "Z")
+            .style({"fill":"black"});
+        //draw spin circle
+        container.append("circle")
+            .attr("cx", 0)
+            .attr("cy", 0)
+            .attr("r", 60)
+            .style({"fill":"white","cursor":"pointer"});
+        //spin text
+        container.append("text")
+            .attr("x", 0)
+            .attr("y", 15)
+            .attr("text-anchor", "middle")
+            .text("")
+            .style({"font-weight":"bold", "font-size":"30px"});
+        
+        
+        function rotTween(to) {
+          var i = d3.interpolate(oldrotation % 360, rotation);
+          return function(t) {
+            return "rotate(" + i(t) + ")";
+          };
+        }
+        
+        
+        function getRandomNumbers(){
+            var array = new Uint16Array(1000);
+            var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
+            if(window.hasOwnProperty("crypto") && typeof window.crypto.getRandomValues === "function"){
+                window.crypto.getRandomValues(array);
+                console.log("works");
+            } else {
+                //no support for crypto, get crappy random numbers
+                for(var i=0; i < 1000; i++){
+                    array[i] = Math.floor(Math.random() * 100000) + 1;
+                }
+            }
+            return array;
+        }
+    </script>
+       
+      </div>
+    </div>
+  <div id="top">
+    
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Бізде барлығы қарапайым!</h2>
+      <span>Балаға мектепке дейінгі білім беру!</span>
+    </div>
+    <div class="text">
+      <span>Бұл сайт баланың білім деңгейін мектеп кезеңіне дейін дайындау үшін жасалған! Сайтта баланы математикалық амалдарды қолдануға үйретумен қатар отбасымен қосылып көптеген ойын түрлері ұсынылған. Бала санасының белгілі бір нәрсеге бағытталып, оның айқын бейнелеуін қамтамассыз етуі және шоғырландыру қабілеті арқылы танымдық белсенділігін арттыру. Баланың ой өрісіне назар аударады, елестетеді, есте сақтаудың түрлері, сұрыптау арқылы зейіні дамиды, бір тұжырымдама жасауға дағдыланады.</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Біліміңді тексер</h2>
+    <h4>бізде барлығы қызық</h4>
+
+    <div class="img">
+      <img src="css/matematika.png" width="100" height="311" alt="">
+      <a  href="str2.html" target="new"><span>Математика</span></a>
+    </div>
+    <div class="img">
+      <img src="css/logika.jpg" width="100" height="311" alt="">
+      <a href="str3.html" target="new"><span>Логика</span></a>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Әліппе</h5></center>
+    <div>
+      <p><img src="img/alippe.jpg" height="750px" width="100%"></p>
+      <span class="heading">Әліппе тарихы!</span><br><br>
+      <span class="heading">Қазақ тіліндегі «әліппе» сөзі арабша А әрпінің атауы әліп (алиф) пен Б әрпінің атауы би сөздерінің тіркесуіне («әліпби» немесе «әліппе») келіп шыққан.</span><br><br>
+      <span class="heading">Әліппе – сауат ашу оқулығы. Ғұлама ғалым А.Байтұрсыновтың жаңа әліпбиі (төте жазу) үлгісімен жазылған «Оқу құралы» (Орынбор, 1912) қазақ мектептерінің әліппеге деген сұранысына толық жауап берген. Онда шәкірттердің сөздік қорын барынша сауат ашу мақсатына тиімді пайдалану мақсаты көзделген. Ахмет Байтұрсынұлы қазақ әліппесі мен қазақ тілі оқулықтарын жазуды 1910 жылдардан бастап қолға алған. Ахмет Байтұрсынұлының әліппесі «Оқу құралы» деген атпен 1912-1925 жылдары арасында 7 рет қайта басылып, оқыту ісінде ұзақ әрі кең қолданыста болды. Бұл сөз тілімізге араб жазуын пайдаланған ертерек кезде еніп, 1929 жылы латын, ал 1940 ж. осы күнгі орыс алфавитіне көшкенімізден кейін де, мектеп табалдырығын тұңғыш аттаған балалардың алдымен танысатын сүйікті оқулығының атауы Әліпби болып қалып келді. Адам баласы талай замандар бойы жасаған, жинаған білімнің асыл қазынасына алғаш жол ашатын оқу құралы деп әліппені үлкен де, кіші де сүйіп қастерлейді.</span><br><br>
+    <span class="heading">Баланы қазақ тілінің әліпбиіне қалай үйрету керек ?</span><br><br>
+    <span class="heading">Балаларды жақсы жаза білуге үйретуді оқуға үйретумен қатар жүргізіледі, алғашқы сабақтардан бастап әріпті анық және дұрыс жазуға баулу керек.</span><br>
+    <p><video src="video/1.mp4" height="300" width="500" controls="controls"></video></p>
+  </div>
+
+  <div>
+      <span class="heading">Дауысты дыбыстар</span><br><br>
+    <p><video src="video/2.mp4" height="300" width="500" controls="controls"></video></p>
+  </div>
+
+  <div>
+      <span class="heading">Дауыссыз дыбыстар</span><br><br>
+    <p><video src="video/3.mp4" height="300" width="500" controls="controls"></video></p>
+  </div>
+       </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Disney</span><br>
+      <span class="heading">Аладдин</span>
+      <p><img src="css/aladin.jpg" width="300px" height="300px"></p>
+      <span class="heading">Моана</span>
+      <p><img src="css/moana.jpg" width="300px" height="300px"></p>
+      <span class="heading">Жануарлар әлемі</span>
+      <p><img src="css/zveropolis.jpg" width="300px" height="300px"></p>
+    </div>
+    <div>
+      <span class="title">Қуыршақтар</span><br>
+      <span class="heading">Барби</span>
+      <p><img src="css/barbi.jpg" width="300px" height="300px"></p>
+      <span class="heading">Хай</span>
+      <p><img src="css/xai.jpg" width="300px" height="300px"></p>
+      <span class="heading">Пинипон ханшайым</span>
+      <p><img src="css/pinipon.jpg" width="300px" height="300px"></p>
+    </div>
+    <div>
+      <span class="title">Көліктер</span><br>
+      <span class="heading">Хаммер</span>
+      <p><img src="css/mashina.jpg" width="300px" height="300px"></p>
+      <span class="heading">Жарысқа арналған көлік</span>
+      <p><img src="css/avto.jpg" width="300px" height="300px"></p>
+      <span class="heading">Кеме</span>
+      <p><img src="css/korabli.jpg" width="300px" height="300px"></p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
